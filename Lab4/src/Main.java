@@ -10,7 +10,7 @@ public class Main {
         //create an object of WeightedGrades class
         WeightedGrades calculate = new WeightedGrades();
 
-        //prompt users to enter Total point total of assignments
+        //prompt users to enter Total point total of assignments123123123123
         System.out.print("Total point total of assignments (split by space): \n");
 
         String res = scanner.nextLine();
