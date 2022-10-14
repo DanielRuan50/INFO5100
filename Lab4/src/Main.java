@@ -18,49 +18,49 @@ public class Main {
         //split String res1 with space
         String[] res1 = res.split(" ");
 
-        //new an array of totalofassignment
-        double[] totalofassignment = new double[res1.length];
+        //new an array of totalOfAssignment
+        double[] totalOfAssignment = new double[res1.length];
 
-        //turn String res1 array back to int and copy to totalofassignment
+        //turn String res1 array back to int and copy to totalOfAssignment
         for (int i = 0; i < res1.length; i++){
-            totalofassignment[i] = Integer.parseInt(res1[i]);
+            totalOfAssignment[i] = Integer.parseInt(res1[i]);
         }
 
 
-        //save the value entered by the user to calculate class
-        calculate.setPointTotal(totalofassignment);
+        //save the value entered by the user to WeightedGrades class
+        calculate.setPointTotal(totalOfAssignment);
 
 
-        //new an array of totalearnedpoints
-        double[] totalearnedpoints = new double[res1.length];
+        //new an array of totalEarnedPoints
+        double[] totalEarnedPoints = new double[res1.length];
 
 
 
         //prompt users to enter Total earned points total of assignments
         System.out.print("Total earned points total of assignments: \n");
-        for (int i = 0; i < totalearnedpoints.length; i++) {
-            totalearnedpoints[i] = scanner.nextDouble();
+        for (int i = 0; i < totalEarnedPoints.length; i++) {
+            totalEarnedPoints[i] = scanner.nextDouble();
 
         }
 
+        //save the value entered by the user to WeightedGrades class
+        calculate.setEarnedTotal(totalEarnedPoints);
 
-        calculate.setEarnedTotal(totalearnedpoints);
 
-
-        //new an array of totalofpercentages
-        double[] totalofpercentages = new double[res1.length];
+        //new an array of totalOfPercentages
+        double[] totalOfPercentages = new double[res1.length];
 
         //prompt users to enter Total percentages total of assignments
         System.out.print("Total percentages total of assignments: \n");
-        for(int i = 0; i < totalofpercentages.length; i++){
-            totalofpercentages[i] = scanner.nextDouble();
+        for(int i = 0; i < totalOfPercentages.length; i++){
+            totalOfPercentages[i] = scanner.nextDouble();
 
         }
-
-        calculate.setPercentageTotal(totalofpercentages);
+        //save the value entered by the user to WeightedGrades class
+        calculate.setPercentageTotal(totalOfPercentages);
 
         //get grade from TotalGrade method
-        double grade = calculate.TotalGrade();
+        double grade = calculate.totalGrade();
 
         System.out.printf("Assignments score: %.3f\n", grade);
 

@@ -1,9 +1,9 @@
 public class WeightedGrades {
 
     //created double array variables
-    private double[] totalofassignment;
-    private double[] totalofpercentages;
-    private double[] totalofearned;
+    private double[] totalOfAssignment;
+    private double[] totalOfPercentages;
+    private double[] totalOfEarned;
 
 
     //constructor
@@ -12,30 +12,31 @@ public class WeightedGrades {
     }
 
     //created setPointTotal method
-    public void setPointTotal(double[] totalofassignment) {
-        this.totalofassignment = totalofassignment;
+    public void setPointTotal(double[] totalOfAssignment) {
+        this.totalOfAssignment = totalOfAssignment;
 
     }
 
     //created setEarnedTotal method
-    public void setEarnedTotal(double[] totalofearned) {
-        this.totalofearned = totalofearned;
+    public void setEarnedTotal(double[] totalOfEarned) {
+        this.totalOfEarned = totalOfEarned;
 
     }
 
     //created setPercentageTotal method
-    public void setPercentageTotal(double[] totalofpercentages) {
-        this.totalofpercentages = totalofpercentages;
+    public void setPercentageTotal(double[] totalOfPercentages) {
+        this.totalOfPercentages = totalOfPercentages;
 
     }
     //calculate final grade
-    public double TotalGrade(){
+    public double totalGrade(){
 
         double res;
         double total = 0;
-        for(int i = 0; i < totalofassignment.length; i++){
+        for(int i = 0; i < totalOfAssignment.length; i++){
 
-            res = totalofearned[i] / totalofassignment[i] * totalofpercentages[i];
+            //calculate each assignment's grades
+            res = totalOfEarned[i] / totalOfAssignment[i] * totalOfPercentages[i];
             total += res;
 
         }
