@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="288fc796-4dba-4721-9930-e075f9f720e3" name="Changes" comment="Lab3">
-      <change afterPath="$PROJECT_DIR$/Lab4/src/Main.java" afterDir="false" />
+    <list default="true" id="288fc796-4dba-4721-9930-e075f9f720e3" name="Changes" comment="Lab4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +33,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "18",
-    "last_opened_file_path": "C:/Users/Daniel/IdeaProjects/Week3"
+    "last_opened_file_path": "C:/Users/Daniel/IdeaProjects/Leetcode"
   }
 }]]></component>
   <component name="RunManager" selected="Application.Main (1)">
@@ -103,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665195449611</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Lab4">
+      <created>1665195797455</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665195797455</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -120,6 +126,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
     <MESSAGE value="Lab3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab3" />
+    <MESSAGE value="Lab4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab4" />
   </component>
 </project>
