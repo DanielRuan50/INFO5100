@@ -1,7 +1,7 @@
 class Main{
     public static void main(String[] args) {
 
-        //call GUI class123
+        //call GUI class
         new GUI();
 
     }
