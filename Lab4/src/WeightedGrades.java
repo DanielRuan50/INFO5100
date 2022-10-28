@@ -7,7 +7,7 @@ public class WeightedGrades {
 
 
     //constructor
-    public WeightedGrades() {
+        public WeightedGrades() {
 
     }
 
