@@ -6,10 +6,10 @@ import java.awt.event.ActionListener;
 public class GUI implements ActionListener {
 
     TextFile textFile = new TextFile();         //Create object textFile of TextFile class
-    JLabel l1, l2, l3;                            //Define 3 JLabels
+    JLabel l1, l3;                            //Define 3 JLabels
     JButton b1, b2;                                //Define 2 JButtons
     JTextArea display, display2;                     //Define 2 JTextArea
-    JTextField nameField;                           //Define 1 JTextField
+    JTextField nameField, nameField1;                           //Define 1 JTextField
     GUI(){
 
         JFrame frame = new JFrame();            //Create object frame of JFrame class
@@ -21,9 +21,6 @@ public class GUI implements ActionListener {
         l1 = new JLabel("Reading File Name");               //Set up the contents of l1
         l1.setFont(new Font("MV Boli", Font.PLAIN,20));
         l1.setBounds(20,0,200,75);
-
-        l2 = new JLabel("Annual.csv");                      //Set up the contents of l2
-        l2.setBounds(20,40,200,75);
 
         l3 = new JLabel("File name to write");               //Set up the contents of l3
         l3.setFont(new Font("MV Boli", Font.PLAIN,20));
@@ -37,8 +34,12 @@ public class GUI implements ActionListener {
         display2.setLineWrap(true);
         display2.setBounds(300,175,200,350);
 
+
         nameField = new JTextField();                           //Set up the contents of nameField
         nameField.setBounds(300,70,200,30);
+
+        nameField1 = new JTextField("Annual.csv");                           //Set up the contents of nameField1
+        nameField1.setBounds(20,60,200,30);
 
         b1 = new JButton("Click to read from file");        //Set up the contents of b1
         b1.setBounds(20,100,200,50);
@@ -57,31 +58,34 @@ public class GUI implements ActionListener {
         frame.setSize(600,600);                         //Set size
         frame.setVisible(true);                                     //Display graphical interface
         frame.add(l1);                                              //add things into frame
-        frame.add(l2);
         frame.add(l3);
         frame.add(b1);
         frame.add(b2);
         frame.add(display);
         frame.add(display2);
         frame.add(nameField);
+        frame.add(nameField1);
         frame.add(panel);
 
         panel.add(l1);                                              //add things into panel
-        panel.add(l2);
         panel.add(l3);
         panel.add(b1);
         panel.add(b2);
         panel.add(display);
         panel.add(display2);
         panel.add(nameField);
+        panel.add(nameField1);
+
+
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
         String fileName = nameField.getText();                      //Save the file name entered by the user to filename
+        String fileName1 = nameField1.getText();                    //Save the file name entered by the user
         if(e.getSource() == b1){                                    //click read button
             display.setText("");
-            textFile.readTextFile(display, "Annual.csv");   //call readTextFile
+            textFile.readTextFile(display, fileName1);              //call readTextFile
         }
         else{                                                       //click write button
             textFile.writeTextFile(display, fileName);              //call writeTextFile
