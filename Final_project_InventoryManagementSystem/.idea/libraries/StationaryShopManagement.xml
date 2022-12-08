@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="StationaryShopManagement">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/StationaryShopManagement.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
